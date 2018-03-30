@@ -1,0 +1,9 @@
+En este modulo se va a implementar funcionalidades como:
+
+1: Registro de dispositivos
+2: Consulta estado dispositivos
+3: Notificaciones de los dispositivos
+4: Bloquedo de apartamento
+5: Envio notificaciones a los Guardas
+6: Desbloqueo de apartamento
+7: Falsas alarmas

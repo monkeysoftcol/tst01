@@ -1,0 +1,10 @@
+En este modulo se va a implementar funcionalidades como:
+
+1: Incripcion de empresa publicitaria
+2: Registro de publicidad por empresa (Tener en cuenta la zona, pais, departamento, ciudad, si aplica para todo el pais)
+3: Estadistica de consulta y visualizacion de la propaganda
+4: Planes de manejo de publicidad
+5: Notificaciones a las empresas de publicidad (pagos, vencimiento publicidad, renovacion de publicidad)
+6: Pagos de publicidad
+7: Reportes Pagos
+8: 

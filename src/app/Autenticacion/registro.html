@@ -1,0 +1,22 @@
+<div class="middle-box text-center loginscreen  animated fadeInDown">
+    <div>
+        <div>
+            <h3 class="logo-name">NB</h3>
+        </div>
+        <h3>Crear Solicitud de ingreso Neibordhood</h3>
+        <p>Red social para la seguridad residencial</p>
+        <p>Ingrese con los datos de acceso entregados por el administador de su red.</p>
+        <form class="m-t" role="form" action="#">
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Codigo red" required="">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password" required="">
+            </div>
+            <button type="submit" class="btn btn-primary block full-width m-b">Solicitar</button>
+            <button type="submit" class="btn btn-default block full-width m-b" [routerLink]="['/login']">Cancelar</button>
+
+        </form>
+        <p class="m-t"> <small>Neibordhood &copy; 2018</small> </p>
+    </div>
+</div>

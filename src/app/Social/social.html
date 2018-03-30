@@ -1,0 +1,238 @@
+<div class="wrapper wrapper-content animated fadeIn">
+
+
+  <div class="row">
+
+    <div class="col-lg-12">
+      <div class="tabs-container">
+        <ul class="nav nav-tabs">
+          <li class="{{panel1?'active':''}}">
+            <a data-toggle="tab" (click)="activarPanel(1)">
+              <i class="fa fa-building"></i>
+              General <span class="label label-warning">{{numnotf_g}}}</span>
+            </a>
+          </li>
+          <li class="{{panel5?'active':''}}">
+            <a data-toggle="tab" (click)="activarPanel(5)">
+              <i class="fa fa-bullhorn"></i>
+              Guardas Seguridad <span class="label label-warning">{{numnotf_sc}}</span>
+            </a>
+          </li>
+          <li class="{{panel2?'active':''}}">
+            <a data-toggle="tab" (click)="activarPanel(2)">
+              <i class="fa fa-newspaper-o"></i>
+              Publicidad <span class="label label-warning">{{numnotf_p}}</span>
+            </a>
+          </li>
+          <li class="{{panel3?'active':''}}"><a data-toggle="tab" (click)="activarPanel(3)">
+            <i class="fa fa-home"></i>
+            SmarthHouse <span class="label label-danger">{{numnotf_s}}</span>
+          </a>
+          </li>
+          <li class="{{panel4?'active':''}}"><a data-toggle="tab" (click)="activarPanel(4)">
+            <i class="fa fa-globe"></i>
+            Fabricante <span class="label label-primary">{{numnotf_gl}}</span>
+          </a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div id="tab-3" class="tab-pane active" *ngIf="panel1">
+            <div class="panel-body">
+              <!--Contenido social conjunto-->
+              <div class="col-lg-6">
+                <div class="social-feed-box">
+
+                  <div class="pull-right social-action dropdown">
+                    <button data-toggle="dropdown" class="dropdown-toggle btn-white">
+                                    <i class="fa fa-angle-down"></i>
+                                </button>
+                    <ul class="dropdown-menu m-t-xs">
+                      <li><a href="#">Config</a></li>
+                    </ul>
+                  </div>
+                  <div class="social-avatar">
+                    <a href="" class="pull-left">
+                                    <img alt="image" src="assets/images/a1.jpg">
+                                </a>
+                    <div class="media-body">
+                      <a href="#">
+                                        Andrew Williams
+                                    </a>
+                      <small class="text-muted">Today 4:21 pm - 12.06.2014</small>
+                    </div>
+                  </div>
+                  <div class="social-body">
+                    <p>
+                      Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Packages and web page editors now use Lorem Ipsum as their default
+                      model text.
+                    </p>
+
+                    <div class="btn-group">
+                      <button class="btn btn-white btn-xs"><i class="fa fa-thumbs-up"></i> Like this!</button>
+                      <button class="btn btn-white btn-xs"><i class="fa fa-comments"></i> Comment</button>
+                      <button class="btn btn-white btn-xs"><i class="fa fa-share"></i> Share</button>
+                    </div>
+                  </div>
+                  <div class="social-footer">
+                    <div class="social-comment">
+                      <a href="" class="pull-left">
+                                        <img alt="image" src="assets/images/a1.jpg">
+                                    </a>
+                      <div class="media-body">
+                        <a href="#">
+                                            Andrew Williams
+                                        </a> Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words.
+                        <br/>
+                        <a href="#" class="small"><i class="fa fa-thumbs-up"></i> 26 Like this!</a> -
+                        <small class="text-muted">12.06.2014</small>
+                      </div>
+                    </div>
+
+                    <div class="social-comment">
+                      <a href="" class="pull-left">
+                                        <img alt="image" src="assets/images/a2.jpg">
+                                    </a>
+                      <div class="media-body">
+                        <a href="#">
+                                            Andrew Williams
+                                        </a> Making this the first true generator on the Internet. It uses a dictionary of.
+                        <br/>
+                        <a href="#" class="small"><i class="fa fa-thumbs-up"></i> 11 Like this!</a> -
+                        <small class="text-muted">10.07.2014</small>
+                      </div>
+                    </div>
+
+                    <div class="social-comment">
+                      <a href="" class="pull-left">
+                                        <img alt="image" src="assets/images/a3.jpg">
+                                    </a>
+                      <div class="media-body">
+                        <textarea class="form-control" placeholder="Write comment..."></textarea>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="social-feed-box">
+
+                  <div class="pull-right social-action dropdown">
+                    <button data-toggle="dropdown" class="dropdown-toggle btn-white">
+                                    <i class="fa fa-angle-down"></i>
+                                </button>
+                    <ul class="dropdown-menu m-t-xs">
+                      <li><a href="#">Config</a></li>
+                    </ul>
+                  </div>
+                  <div class="social-avatar">
+                    <a href="" class="pull-left">
+                                    <img alt="image" src="assets/images/a6.jpg">
+                                </a>
+                    <div class="media-body">
+                      <a href="#">
+                                        Andrew Williams
+                                    </a>
+                      <small class="text-muted">Today 4:21 pm - 12.06.2014</small>
+                    </div>
+                  </div>
+                  <div class="social-body">
+                    <p>
+                      Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Packages and web page editors now use Lorem Ipsum as their default
+                      model text.
+                    </p>
+                    <p>
+                      Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Packages and web page editors now use Lorem Ipsum as their default model text.
+                    </p>
+                    <img src="assets/images/gallery/11.jpg" class="img-responsive">
+                    <div class="btn-group">
+                      <button class="btn btn-white btn-xs"><i class="fa fa-thumbs-up"></i> Like this!</button>
+                      <button class="btn btn-white btn-xs"><i class="fa fa-comments"></i> Comment</button>
+                      <button class="btn btn-white btn-xs"><i class="fa fa-share"></i> Share</button>
+                    </div>
+                  </div>
+                  <div class="social-footer">
+                    <div class="social-comment">
+                      <a href="" class="pull-left">
+                                        <img alt="image" src="assets/images/a1.jpg">
+                                    </a>
+                      <div class="media-body">
+                        <a href="#">
+                                            Andrew Williams
+                                        </a> Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words.
+                        <br/>
+                        <a href="#" class="small"><i class="fa fa-thumbs-up"></i> 26 Like this!</a> -
+                        <small class="text-muted">12.06.2014</small>
+                      </div>
+                    </div>
+
+                    <div class="social-comment">
+                      <a href="" class="pull-left">
+                                        <img alt="image" src="assets/images/a2.jpg">
+                                    </a>
+                      <div class="media-body">
+                        <a href="#">
+                                            Andrew Williams
+                                        </a> Making this the first true generator on the Internet. It uses a dictionary of.
+                        <br/>
+                        <a href="#" class="small"><i class="fa fa-thumbs-up"></i> 11 Like this!</a> -
+                        <small class="text-muted">10.07.2014</small>
+                      </div>
+                    </div>
+
+                    <div class="social-comment">
+                      <a href="" class="pull-left">
+                                        <img alt="image" src="assets/images/a8.jpg">
+                                    </a>
+                      <div class="media-body">
+                        <a href="#">
+                                            Andrew Williams
+                                        </a> Making this the first true generator on the Internet. It uses a dictionary of.
+                        <br/>
+                        <a href="#" class="small"><i class="fa fa-thumbs-up"></i> 11 Like this!</a> -
+                        <small class="text-muted">10.07.2014</small>
+                      </div>
+                    </div>
+
+                    <div class="social-comment">
+                      <a href="" class="pull-left">
+                                        <img alt="image" src="assets/images/a3.jpg">
+                                    </a>
+                      <div class="media-body">
+                        <textarea class="form-control" placeholder="Write comment..."></textarea>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+              <!--Fin contenido social conjuntio--->
+            </div>
+          </div>
+          <div id="tab-5" class="tab-pane active" *ngIf="panel5">
+            <div class="panel-body">
+              Enviar alerta a guardas de seguridad
+            </div>
+          </div>
+          <div id="tab-2" class="tab-pane active" *ngIf="panel2">
+            <div class="panel-body">
+              publicidad
+            </div>
+          </div>
+          <div id="tab-3" class="tab-pane active" *ngIf="panel3">
+            <div class="panel-body">
+              SmarthHouse
+            </div>
+          </div>
+          <div id="tab-4" class="tab-pane active" *ngIf="panel4">
+            <div class="panel-body">
+              Noticias de MonkeySoft
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

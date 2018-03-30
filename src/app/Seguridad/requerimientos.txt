@@ -1,0 +1,16 @@
+En este modulo se va a implementar funcionalidades como:
+
+1: Login
+2: Logout
+3: Solicitude de creacion de red
+4: Solicitudes de empresas de publicidad
+5: Solicitudes de empresas de domotica
+6: Solicitud de medios de comunicacion
+7: Condiciones de acceso
+8: Politicas  de datos
+9: Restaurar de contreseña
+10: Envio de notificación de acceso al correo dueño del perfil (administradores, usuarios de una red)
+11: Captura del sitio de ingreso al sistema
+12: Inicio o creacion de cuenta de sesion con facebook (https://developers.facebook.com/docs/javascript, https://developers.facebook.com/docs/javascript/howto/angularjs, https://developers.facebook.com/docs/javascript/howto/jquery/v2.11)
+13: Inicio o creacion de cuenta de sesion con google
+14: Configuración de seguridad de las cuentas

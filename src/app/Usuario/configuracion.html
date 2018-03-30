@@ -1,0 +1,95 @@
+<div class="wrapper wrapper-content animated fadeIn">
+
+
+  <div class="row">
+
+    <div class="col-lg-12">
+      <div class="tabs-container">
+        <ul class="nav nav-tabs">
+          <li class="{{panel1?'active':''}}">
+            <a data-toggle="tab" (click)="activarPanel(1)">
+              <i class="fa fa-address-card-o"></i>
+              Configuración <span class="label label-warning">{{numnotf_g}}}</span>
+            </a>
+          </li>
+          <li class="{{panel5?'active':''}}">
+            <a data-toggle="tab" (click)="activarPanel(5)">
+              <i class="fa fa-bullhorn"></i>
+            Últimos ingresos <span class="label label-warning">{{numnotf_sc}}</span>
+            </a>
+          </li>
+          <li class="{{panel2?'active':''}}">
+            <a data-toggle="tab" (click)="activarPanel(2)">
+              <i class="fa fa-eye"></i>
+              Privacidad
+            </a>
+          </li>
+          <li class="{{panel3?'active':''}}"><a data-toggle="tab" (click)="activarPanel(3)">
+            <i class="fa fa-home"></i>
+            Politicas
+          </a>
+          </li>
+          <li class="{{panel4?'active':''}}"><a data-toggle="tab" (click)="activarPanel(4)">
+            <i class="fa fa-globe"></i>
+            Otros
+          </a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div id="tab-3" class="tab-pane active" *ngIf="panel1">
+            <div class="panel-body">
+              <!--Contenido social conjunto-->
+
+              <div class="col-lg-12">
+                <div class="col-md-6">
+                  <div class="ibox ">
+                    <div class="ibox-title">
+                      <h5>Show the password strength as a status in the field </h5>
+                    </div>
+                    <div class="ibox-content">
+                      <form role="form">
+                        <div class="row" id="pwd-container2">
+                          <div class="col-sm-12">
+                            <div class="form-group">
+                              <label for="password2">Password</label>
+                              <input type="password" class="form-control example2" id="password2" placeholder="Password" value="Pass">
+                            </div>
+                            <div class="form-group">
+                              <div class="pwstrength_viewport_verdict"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Fin contenido social conjuntio--->
+            </div>
+          </div>
+          <div id="tab-5" class="tab-pane active" *ngIf="panel5">
+            <div class="panel-body">
+              Enviar alerta a guardas de seguridad
+            </div>
+          </div>
+          <div id="tab-2" class="tab-pane active" *ngIf="panel2">
+            <div class="panel-body">
+              publicidad
+            </div>
+          </div>
+          <div id="tab-3" class="tab-pane active" *ngIf="panel3">
+            <div class="panel-body">
+              SmarthHouse
+            </div>
+          </div>
+          <div id="tab-4" class="tab-pane active" *ngIf="panel4">
+            <div class="panel-body">
+              Noticias de MonkeySoft
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+En este modulo se va a implementar funcionalidades como:
+
+1: Notificaciones de acceso a red (Administradores de conjuntos)
+2: Aprobaciones, rechazo, validacion de datos de nuevo conjunto para creacion de red
+3: Administrar publicidad
+4: Configuracion de publicidad a todo el conjunto (dependiendo de un plan pago se podría desactivar las notificaciones de publicidad)
+5: Solicitudes de empresas por publicidad
+6: Notificacion a empresas de publicidad
+7: Notificaciones a todos las redes (Envio de ventanas de mantenimiento,nuevas versiones)
+8: Administracion de pqrs (mantis)
+9: Configuracion empresas de domotica
+10: Notificaciones (SDK, API integracion con SecurityNetwork )
+11: Bloqueo de usuarios
+12: Bloqueo de redes
+13: Doble atenticación   (Código al correo electrónico de confirmación, tanto para registro como cambio de contraseñas, autenticacion en dos pasos)
+14: Reseteo de contraseñas (para todos los usuarios)
+15: Recepcion de Denuncias
+16: Configuraciones globales del sistema
+17: Busqueda dentro de la red
+18: Mapa global de creacion de redes
+19: Visor de estadisticas de uso de la plataforma
+20: Visor de usuarios en sesion
+21:

@@ -1,0 +1,25 @@
+En este modulo se va a implementar funcionalidades como:
+
+1: Administracion pagos
+2: Pago parqueaderos (Configuracion de tarifas, reportes) - Asignacion de parqueaderos
+3: Mudanzas solicitudes tanto de ingreso como de salida, notificacion al dueño del apartamento en caso de ser arrendatario y esperar aprobacion del dueño
+4: Reportes
+5: Notificaciones al administrador
+6: Notificaciones a todo el conjunto (publicacion en el muro principal, en el muero de alertas)
+7: Administracion de seguridad (Guardas, Policias)
+8: Administracion servicios generales
+9: Admnistracion de compras y servicios
+10: Reuniones de junta de propietarios - Notificaciones, confirmaciones, correo electronico
+11: Eventos
+12: Activos conjunto (inventarios)
+13: Atencion a pqrs (enviados por los residentes)
+14: Notificaciones de sospechosos policia
+15: Soporte a MonkeySoft
+16: Notificaciones de denuncias por parte de los usuarios de la red (Adjuntar pruebas)
+17: Configuracion de privacidad
+18: Bloqueos d e usuarios
+19: Multas por mal uso de la plataforma u otros insidentes
+20: Expedicion de paz y salvos
+21: Configuracion de costos, precios, iva. etc.
+22: Nomina
+23: Agenda

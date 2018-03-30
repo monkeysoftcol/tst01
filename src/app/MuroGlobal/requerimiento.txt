@@ -1,0 +1,6 @@
+En este modulo se va a implementar funcionalidades como:
+
+1: Notificaciones de seguridad por área para todas las redes en general (Ejm: sospechosos como carros, personas, bandas, policias falsos)
+2: Recepcion de solicitudes de denuncias a nivel general
+3: Publicidad por zonas/radio par llegar a conjuntos en comun
+4. uasduasudus

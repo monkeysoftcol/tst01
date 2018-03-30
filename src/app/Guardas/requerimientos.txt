@@ -1,0 +1,16 @@
+En este modulo se va a implementar funcionalidades como:
+
+1: Perfil
+2: Notificaciones enviados por el administrador (modelo)
+3: Notificaciones de los residentes
+4: Notificaciones de seguridad del conjunto
+5: Bitacora
+6: Recaudo pago parqueaderos
+7: Solicitud de permisos (Ante el administrador de conjunto como a la empresa)
+8: Notificaciones a la empresa de seguridad (Perfil para el resposable de la empresa de seguridad para que este al tanto de lo que hacen sus empleados)
+9: Notificaciones de la empresa a la que pertenece el Guardas
+10: Notificaciones de sospechosos policia
+11: Envio notificaciones al cuadrante (solo emergencias - boton de panico) - Notificacion al admin de conjunto
+12: Apartamentos que se quedan solos
+13: Validacion de placas autorizadas, reportadas
+14: Crear denuncio de personas sopechoas, carros, bandas a nivel global con autorización de la policia y del administrador del conjunto

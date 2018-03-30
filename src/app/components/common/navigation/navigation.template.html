@@ -1,0 +1,75 @@
+<nav class="navbar-default navbar-static-side" role="navigation">
+  <div class="sidebar-collapse">
+    <ul class="nav metismenu" id="side-menu">
+      <li class="nav-header">
+        <div class="profile-element" dropdown>
+          <img alt="image" class="img-circle" src="assets/images/profile_small.jpg">
+          <a dropdownToggle>
+            <span class="block m-t-xs"> <strong class="font-bold">David Williams</strong> </span>
+            <span class="text-muted text-xs block">Art Director <b class="caret"></b> </span>
+          </a>
+          <ul class="animated fadeInRight dropdown-menu" *dropdownMenu>
+            <li><a [routerLink]="['/profile']">Profile</a></li>
+            <li><a [routerLink]="['/contacts','friends']">Contacts</a></li>
+            <li><a [routerLink]="['/inbox','entrada']">Mailbox</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </div>
+        <div class="logo-element">
+          NB+
+        </div>
+      </li>
+      <li><a [routerLink]="['/social']"><i class="fa fa-users"></i> <span class="nav-label">Social </span><span class="label label-success pull-right">{{cantCorreos}}</span></a></li>
+      <li>
+        <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">Mailbox </span><span class="label label-warning pull-right">{{cantCorreos}}</span></a>
+        <ul class="nav nav-second-level collapse">
+          <li [ngClass]="{active: activeRoute('dashboard1')}"><a [routerLink]="['/inbox','entrada']" >Inbox</a></li>
+          <li><a href="mail_detail.html">Administrador conjunto</a></li>
+        </ul>
+      </li>
+      <li>
+        <a><i class="fa fa-wechat"></i> <span class="nav-label">Chat</span><span class="label label-warning pull-right">{{cantCorreos}}</span></a>
+        <ul class="nav nav-second-level collapse">
+          <li [ngClass]="{active: activeRoute('dashboard1')}"><a [routerLink]="['/chat']" >Room</a></li>
+        </ul>
+      </li>
+      <li>
+        <a><i class="fa fa-address-book-o"></i> <span class="nav-label">Contactos</span><span class="label label-warning pull-right">{{cantCorreos}}</span></a>
+        <ul class="nav nav-second-level collapse">
+            <li [ngClass]="{active: activeRoute('dashboard1')}"><a [routerLink]="['/contacts','family']" >Familia <span class="label label-primary pull-right">50</span></a></li>
+            <li [ngClass]="{active: activeRoute('dashboard1')}"><a [routerLink]="['/contacts','visitors']" >Visitantes <span class="label label-primary pull-right">50</span></a></li>
+          <li [ngClass]="{active: activeRoute('dashboard1')}"><a [routerLink]="['/contacts','friends']" >Amigos <span class="label label-primary pull-right">50</span></a></li>
+          <li [ngClass]="{active: activeRoute('dashboard1')}"><a [routerLink]="['/contacts','request']" >Solicitudes <span class="label label-warning pull-right">3</span></a></li>
+          <li [ngClass]="{active: activeRoute('dashboard1')}"><a [routerLink]="['/contacts','block']" >Bloqueados <span class="label label-danger pull-right">1</span></a></li>
+        </ul>
+      </li>
+      <li>
+        <a><i class="fa fa-share-alt"></i> <span class="nav-label">Redes</span></a>
+        <ul class="nav nav-second-level collapse">
+          <li [ngClass]="{active: activeRoute('dashboard1')}"><a [routerLink]="['/root/redes']" >Configuración</a> </li>
+          <li [ngClass]="{active: activeRoute('dashboard1')}"><a [routerLink]="['/root/map']" >Mapa</a></li>
+          <li [ngClass]="{active: activeRoute('dashboard1')}"><a [routerLink]="['/root/solred']" >Solicitudes <span class="label label-primary pull-right">50</span></a></li>
+        </ul>
+      </li>
+
+      <li [ngClass]="{active: activeRoute('starter')}">
+        <a [routerLink]="['/settings']"><i class="fa fa-gears"></i> <span class="nav-label">Configuración</span></a>
+      </li>
+
+      <li><a [routerLink]="['/ayuda']"><i class="fa fa-info"></i> <span class="nav-label">Ayuda</span></a></li>
+
+      <li [ngClass]="{active: activeRoute('starter')}">
+        <a [routerLink]="['/starterview']"><i class="fa fa-th-large"></i> <span class="nav-label">Starter view</span></a>
+      </li>
+
+      <li [ngClass]="{active: activeRoute('login')}">
+        <a [routerLink]="['/login']"><i class="fa fa-th-large"></i> <span class="nav-label">Login</span></a>
+      </li>
+      <li class="landing_link">
+        <a target="_blank" href="landing.html"><i class="fa fa-star"></i> <span class="nav-label">Página principal</span> <span class="label label-warning pull-right">NEW</span></a>
+      </li>
+    </ul>
+
+  </div>
+</nav>

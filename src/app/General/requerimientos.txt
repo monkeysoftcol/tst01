@@ -1,0 +1,3 @@
+En este modulo se va a implementar funcionalidades como:
+
+1: Aqui implementar cosas genericas de la plataforma

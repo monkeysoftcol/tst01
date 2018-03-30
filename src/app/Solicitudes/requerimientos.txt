@@ -1,0 +1,7 @@
+En este modulo se va a implementar funcionalidades como:
+
+1: Creacion solicitud de acceso a la red por un conjunto, cuadra, junta de accion conmunda
+2: Notificaciones de aprobaciones, rechazos, devoluciones
+3: Solicitudes de usuarios a un conjunto (Notificacion al administrador, dueño apartamento, arrendatarios, guardas)
+4: Solicitudes de registro de nuevo guarda
+5: 

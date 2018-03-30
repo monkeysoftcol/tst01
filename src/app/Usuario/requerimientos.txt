@@ -1,0 +1,32 @@
+
+1: Configuracion de privacidad
+2: Configuracion de bloqueos de usuarios
+3: Envio de notificaciones al administrador (Denuncias, Pqrs)
+4: Solicitud de Mudanzas
+5: Registro de personas autorizadas para entrar y salir del conjunto, del apartamento, para sacar cosas, para acceder al parqueadero de visitante
+6: Bloqueo a personas visitantes
+7: Publicar noticias al muro general
+8: Publicar en el muro personal
+9: Publicar en el muro de otro usuario
+10: Comentar publicacion
+11: Publicar notificias de alertas de seguridad
+12: Enviar notificacion a los guardas de insidentes dentro y fuera del conjunto
+13: Configuracion del Perfil
+14: Cambio de contraseña
+15: Anuncios publicitarios - Contactar al super admin para contrato de publicidad, ver planes
+16: Buzon de ayuda
+17: Chat
+18: Buzon de correo
+19: Mis contactos
+20: Busqueda dentro de la red
+21: Notificaciones de acceso al perfil (Navegador, ubicacion)
+
+--smart house
+1: Activar y desactivar seguridad
+2: Ver estado dispositivos
+3: Enviar notificacion de fallas en los dispositivos
+4: Ver historial de marcaciones
+5: Activar y desactivar dispositivos
+6: Activar notificaciones de los dispositivos (app movil, correo electrónico)
+7: Recomendar apartamento cuando lo deje solo
+8:
