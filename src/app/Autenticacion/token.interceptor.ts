@@ -16,12 +16,12 @@ export class TokenInterceptor implements HttpInterceptor {
   }
   //obtener del localStorage
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    console.log("Interceptor peticiones http a lo servicios");
+    console.log("*********Interceptor peticiones http a lo servicios****************");
     let token ="eyJhbGciOiJIUzUxMiJ9.eyJyZWQiOiIxMDAwIiwic3ViIjoiQ2FybG9zIENlcGVkYSIsInBhc3N3b3JkIjpudWxsLCJpcCI6IjEyNy4wLjAuMSIsImlzcyI6ImtoYXJsb3NqQGdtYWlsLmNvbSIsImV4cCI6MTUyNDY4MTgxOSwiaWF0IjoxNTI0NTk1NDE5LCJqdGkiOiI5YmRiMjEwMy0yYzQ2LTRiMDctYTU4OS02MTgxM2Y2NjI1OWEiLCJ1c2VybmFtZSI6bnVsbH0.Jgl_g-M-OYsn7EUDB3slt8WgCnwmnsJCHjx3c7NJqDwlTSsP4XFfrC8PRrX6NDMtqTTQwLRwme4aJNGfIzcg5w";
     let headers = new HttpHeaders(
       {
         'Content-Type':'application/json',
-        'Authorization': 'Bearer '+token,
+        'authorization': 'Bearer '+token,
         'X_HEIGBORHOOD_USER':'kharlosj@gmail.com',
         'X_HEIGBORHOOD_RED':'1000'
       }

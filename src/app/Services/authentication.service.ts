@@ -1,18 +1,17 @@
 
 import {Injectable} from '@angular/core';
-//--- para ws
-import {HttpClient} from '@angular/common/http';
-//import {Http, Response, Headers} from '@angular/http';
+
+import {HttpClient, HttpHeaders} from '@angular/common/http';
+
 //--- libreria para mapear objetos
 import 'rxjs/add/operator/map';
 //--- libreria para recoger respuestas en ajax al servidor
 import {Observable} from 'rxjs/Observable';
 import { Mensaje } from '../Models/mensaje';
-
 import {GLOBAL} from '../General/global';
 
 @Injectable()
-export class TestService{
+export class AuthenticationService{
 
 	public url:string;
 	public identity;
@@ -20,12 +19,19 @@ export class TestService{
 
 	constructor(private _http: HttpClient){
 		this.url = GLOBAL.url;
-		console.log(">>>>>>> Cargando test services constructor.....");
 		console.log(this.url);
 	}
 
-	test(): Observable<Mensaje>{
-		return this._http.get<Mensaje>(this.url + 'auth/adminmudanzas/test');
-	}
+  login(username: string, password: string) {
+      //Aqui implementar llamado al backend
+      localStorage.setItem('currentUser','jhavierc');
+  }
+
+  logout() {
+      // remove user from local storage to log user out
+      localStorage.removeItem('currentUser');
+      //ws para terminar la sesion en el backend
+  }
+
 
 }

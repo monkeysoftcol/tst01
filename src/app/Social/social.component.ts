@@ -26,7 +26,18 @@ export class SocialComponent implements OnInit {
     private _route: ActivatedRoute,
     private _router: Router
   ) {
-    this._testService.test();
+    //this._testService.test();
+    this._testService.test().subscribe(
+        (response) =>{
+          console.log('Respuesta servicios test: '+response.mensaje);
+        },
+        (error) =>{
+          console.log('Respuesta servicios test error : '+JSON.stringify(error));
+          console.log('Respuesta servicios test error : '+error.error.mensaje);
+        //  var body = JSON.parse(error._body);
+        //  console.log(body);
+        }
+    );
   }
 
   ngOnInit() {

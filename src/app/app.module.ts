@@ -32,6 +32,12 @@ import {LayoutsModule} from "./components/common/layouts/layouts.module";
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TokenInterceptor } from './Autenticacion/token.interceptor';
 
+//AuthGuard
+import { AuthGuard } from './Autenticacion/auth.guard';
+
+//_services
+import { AuthenticationService } from './Services/authentication.service';
+
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -59,6 +65,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     })
   ],
   providers: [
+    AuthGuard,
+    AuthenticationService,
     {
       provide: LocationStrategy,
       useClass: HashLocationStrategy

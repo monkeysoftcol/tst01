@@ -41,13 +41,16 @@ import {BlankLayoutComponent} from "./components/common/layouts/blankLayout.comp
 import {BasicLayoutComponent} from "./components/common/layouts/basicLayout.component";
 import {TopNavigationLayoutComponent} from "./components/common/layouts/topNavigationlayout.component";
 
+//AuthGuard
+import { AuthGuard } from './Autenticacion/auth.guard';
+
 export const ROUTES:Routes = [
   // Main redirect
-  {path: '', redirectTo: 'profile', pathMatch: 'full'},
+  {path: '', redirectTo: 'login', pathMatch: 'full'},
 
   // App views
   {
-    path: 'dashboards', component: BasicLayoutComponent,
+    path: 'dashboards', component: BasicLayoutComponent, canActivate: [AuthGuard],
     children: [
       {path: 'dashboard1', component: Dashboard1Component},
       {path: 'dashboard2', component: Dashboard2Component},
@@ -65,28 +68,25 @@ export const ROUTES:Routes = [
   {
     path: '', component: BasicLayoutComponent,
     children: [
-      {path: 'starterview', component: StarterViewComponent},
-      {path: 'inbox/:bandeja', component: InboxComponent},
-      {path: 'maildetail/:id', component: MailDetailComponent},
-      {path: 'mailnew', component: MailNewComponent},
-      {path: 'chat', component: ChatUserComponent},
-      {path: 'contacts/:tipo', component: ContactsComponent},
-      {path: 'profile', component: PerfilUserComponent},
-      {path: 'error', component: ErrorComponent},
-      {path: 'social', component: SocialComponent},
-      {path: 'settings', component: ConfiguracionComponent},
-      {path: 'profile/friend/:id', component: PerfilFriendComponent},
-      {path: 'ayuda', component: AyudaUserComponent},
+      {path: 'starterview', component: StarterViewComponent, canActivate: [AuthGuard]},
+      {path: 'inbox/:bandeja', component: InboxComponent, canActivate: [AuthGuard]},
+      {path: 'maildetail/:id', component: MailDetailComponent, canActivate: [AuthGuard]},
+      {path: 'mailnew', component: MailNewComponent, canActivate: [AuthGuard]},
+      {path: 'chat', component: ChatUserComponent, canActivate: [AuthGuard]},
+      {path: 'contacts/:tipo', component: ContactsComponent, canActivate: [AuthGuard]},
+      {path: 'profile', component: PerfilUserComponent, canActivate: [AuthGuard]},
+      {path: 'error', component: ErrorComponent, canActivate: [AuthGuard]},
+      {path: 'social', component: SocialComponent, canActivate: [AuthGuard]},
+      {path: 'settings', component: ConfiguracionComponent, canActivate: [AuthGuard]},
+      {path: 'profile/friend/:id', component: PerfilFriendComponent, canActivate: [AuthGuard]},
+      {path: 'ayuda', component: AyudaUserComponent, canActivate: [AuthGuard]},
 
 
-      {path: 'root/redes', component: AdminRedesComponent},
-      {path: 'root/redinfo/:id', component: RedDetailComponent},
-      {path: 'root/map', component: MapRedesComponent},
-      {path: 'root/solred', component: SolicitudRedComponent},
-      {path: 'root/solinfo/:id', component: SolicitudDetailComponent}
-
-
-
+      {path: 'root/redes', component: AdminRedesComponent, canActivate: [AuthGuard]},
+      {path: 'root/redinfo/:id', component: RedDetailComponent, canActivate: [AuthGuard]},
+      {path: 'root/map', component: MapRedesComponent, canActivate: [AuthGuard]},
+      {path: 'root/solred', component: SolicitudRedComponent, canActivate: [AuthGuard]},
+      {path: 'root/solinfo/:id', component: SolicitudDetailComponent, canActivate: [AuthGuard]}
 
     ]
   },
