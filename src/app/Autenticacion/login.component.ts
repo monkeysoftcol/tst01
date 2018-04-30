@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { Router, ActivatedRoute } from '@angular/router';
 import { AuthenticationService } from '../Services/authentication.service';
+import { TranslateService } from '@ngx-translate/core';
 import 'rxjs/add/operator/map';
 
 
@@ -18,8 +19,10 @@ export class LoginComponent implements OnInit {
 
   constructor(private route: ActivatedRoute,
     private router: Router,
-    private _authenticationService: AuthenticationService){
-
+    private _authenticationService: AuthenticationService,
+    private translate: TranslateService){
+      
+      translate.setDefaultLang('es');
   }
 
   ngOnInit() {
@@ -29,7 +32,7 @@ export class LoginComponent implements OnInit {
 
   login() {
       this.loading = true;
-      this._authenticationService.login(this.model.username, this.model.password)
+      /*this._authenticationService.login(this.model.username, this.model.password)
           .subscribe(
               data => {
                   console.log(">>>> LOGIN OK, REDIRECCION A A :"+this.returnUrl);
@@ -39,7 +42,7 @@ export class LoginComponent implements OnInit {
                   //this.alertService.error(error);
                   console.log('Error login = '+error);
                   this.loading = false;
-              });
+              });*/
   }
 
 }
