@@ -1,4 +1,12 @@
 {
     "Title": "Vecino",
-    "Intro": "Bievenido."
+    "Intro": "Bievenido.",
+    "ADM_RED":{
+      "TITLE_ADD":"Crear nueva red",
+      "TITLE_UPD":"Actualizar información red",
+      "TITLE_LIST":"Lista de redes"
+    },
+    "LOGIN":{
+      "TEST":"Hola cepeda"
+    }
 }

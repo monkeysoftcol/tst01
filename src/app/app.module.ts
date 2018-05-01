@@ -28,6 +28,16 @@ import {AppviewsModule} from "./views/appviews/appviews.module";
 // App modules/components
 import {LayoutsModule} from "./components/common/layouts/layouts.module";
 
+//HttpInterceptor
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { TokenInterceptor } from './Autenticacion/token.interceptor';
+
+//AuthGuard
+import { AuthGuard } from './Autenticacion/auth.guard';
+
+//_services
+import { AuthenticationService } from './Services/authentication.service';
+
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -54,7 +64,18 @@ export function HttpLoaderFactory(http: HttpClient) {
       }
     })
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [
+    AuthGuard,
+    AuthenticationService,
+    {
+      provide: LocationStrategy,
+      useClass: HashLocationStrategy
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptor,
+      multi: true
+    }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
